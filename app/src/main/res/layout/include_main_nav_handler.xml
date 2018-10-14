@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_nav_header"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/bk_my_name_is_van"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/tv_folderlist_to_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_nav_header"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="4dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text=" username"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:onClick="onClick"/>
+</RelativeLayout>

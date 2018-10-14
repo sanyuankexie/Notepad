@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="通用"
+        android:key="pref_cate_base">
+        <SwitchPreference
+            android:key="@string/is_recovery_key"
+            android:title="启用回收站"
+            android:summary="删除的便签可以在回收站中恢复"
+            android:defaultValue="true"/>
+        <PreferenceScreen
+            android:title="隐私密码">
+            <intent android:action="studio.microword.hypernote.LOCK_SETTING" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="开放源代码许可">
+            <intent android:action="studio.microword.hypernote.LICENCE"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="关于">
+            <intent android:action="studio.microword.hypernote.ABOUT"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

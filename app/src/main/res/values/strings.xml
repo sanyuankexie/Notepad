@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hyper Note</string>
+    <string name="bmob_appid">0f4daccb0f507dc6877f57fbf665ceea</string>
+    <string name="bing_url"><![CDATA[http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1]]></string>
+    <string name="note_private_and_recovery">私密便签无法直接预览，请先恢复！</string>
+    <string name="color_picker_title">选择颜色</string>
+    <string name="launch_note1">欢迎使用本软件</string>
+    <string name="launch_note2">暂时没有</string>
+    <string name="main_search">输入内容查找</string>
+    <string name="is_first_key">isFirst</string>
+    <string name="is_lock_key">isLock</string>
+    <string name="is_recovery_key">isRecovery</string>
+    <string name="lock_password_key">lockPassword</string>
+    <string name="select_folder_id_key">selectFolderId</string>
+    <string name="note_list_style_key">noteListStyle</string>
+    <string name="username_key">username</string>
+    <string name="password_key">password</string>
+    <string name="wallpaper_time_key">wallpaperTime</string>
+    <string name="user_setting_key">userSetting</string>
+    <string name="image_uri_key">ImageUri</string>
+    <string name="html_before"><![CDATA[<html><head></head><body>]]></string>
+    <string name="html_after"><![CDATA[</body></html>]]></string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="studio.microworld.hypernote">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- 摄像头权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!-- 自动聚焦权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.launch.LaunchActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.HostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+        <activity
+            android:name=".ui.editor.EditorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+        <activity
+            android:name=".ui.qrcode.QRScanActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.editor.ImageBrowserActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false">
+        </service>
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="11689476"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="vOOSirowDAlFmwuzdFmyovIo"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="07fl6OkM4MWwOo3AoIfPD6OrFYtDfMMr"/>
+
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+
+    </application>
+
+</manifest>
